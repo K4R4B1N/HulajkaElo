@@ -7,8 +7,10 @@
 ### 2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
 ### 3. Zaznacz tę bibliotekę i kliknij "Dodaj do projektu".
 ### Następnie dodać kod:
+```ruby
 #include "stm32f7xx_hal.h" //biblioteka HAL
 #define LIS3DSH_ADDRESS 0x1E // Adres akcelometru
+```
 ### A następnie, aby utworzyć funkcje HAL_I2C_MspInit(): 
 ```ruby
 static void MX_I2C1_Init(void)
