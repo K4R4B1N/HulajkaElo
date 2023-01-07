@@ -10,6 +10,7 @@
 #include "stm32f7xx_hal.h" //biblioteka HAL
 #define LIS3DSH_ADDRESS 0x1E // Adres akcelometru
 ### A następnie, aby utworzyć funkcje HAL_I2C_MspInit(): 
+```ruby
 static void MX_I2C1_Init(void)
 {
   hi2c1.Instance = I2C1;
@@ -31,9 +32,9 @@ static void MX_I2C1_Init(void)
     Error_Handler();
   }
 }
-
+```
 ## Program, który odczytuje dane z ACC i wyświetla je na konsoli:
-
+```ruby
 #include "stm32f7xx_hal.h"  // Dołącz bibliotekę HAL
 #include "stdio.h"  // Dołącz bibliotekę standardowego wejścia/wyjścia
 #define LIS3DSH_ADDRESS 0x1E  // Adres akcelerometru LIS3DSH
@@ -69,6 +70,6 @@ int main(void)
     HAL_Delay(500);  // Zatrzymaj program na 500 ms
   }
 }
-
+```
 # Deadline
 10.02.2023
