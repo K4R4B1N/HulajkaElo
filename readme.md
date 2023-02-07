@@ -1,17 +1,20 @@
 # Projekt poziomica
 
+![plytka_wyprowadzenia](https://user-images.githubusercontent.com/95858259/217327461-cd24c018-ccdd-40c6-ad00-4be09ccdbb1e.jpg)
+
+
 ## Konfiguracja ACC
-### Aby skorzystać z ACC w konfiguracji I2C należy pobrać bibliotekę:
+ Aby skorzystać z ACC w konfiguracji I2C należy pobrać bibliotekę:
  
-### 1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
-### 2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
-### 3. Zaznacz tę bibliotekę i kliknij "Dodaj do projektu".
-### Następnie dodać kod:
+ 1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
+ 2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
+ 3. Zaznacz tę bibliotekę i kliknij "Dodaj do projektu".
+ Następnie dodać kod:
 ```ruby
 #include "stm32f7xx_hal.h" //biblioteka HAL
 #define LIS3DSH_ADDRESS 0x1E // Adres akcelometru
 ```
-### A następnie, aby utworzyć funkcje HAL_I2C_MspInit(): 
+ A następnie, aby utworzyć funkcje HAL_I2C_MspInit(): 
 ```ruby
 static void MX_I2C1_Init(void)
 {
@@ -35,6 +38,7 @@ static void MX_I2C1_Init(void)
   }
 }
 ```
+
 ## Program, który odczytuje dane z ACC i wyświetla je na konsoli:
 ```ruby
 #include "stm32f7xx_hal.h"  // Dołącz bibliotekę HAL
