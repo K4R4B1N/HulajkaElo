@@ -14,12 +14,15 @@
 ### Konfiguracja ACC (akcelometra)
 
 * [Badany akcelometr](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/LIS3DH_akcelometr_fullDATASHEET.PDF)
+* [Biblioteka z githuba](https://github.com/sparkfun/SparkFun_LIS3DH_Arduino_Library)
 
- Aby skorzystać z ACC(akcelometru) w konfiguracji I2C należy pobrać bibliotekę:
+ Aby skorzystać z konfiguracji I2C należy pobrać bibliotekę:
  
  1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
  2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
  3. Zaznacz tę bibliotekę i kliknij "Dodaj do projektu".
+Albo
+* Pobierz bezpośrednio z biblioteki [github](https://github.com/STMicroelectronics/stm32h7xx_hal_driver/tree/master/Src)
  Następnie dodać kod:
 ```ruby
 #include "stm32f7xx_hal.h" //biblioteka HAL
