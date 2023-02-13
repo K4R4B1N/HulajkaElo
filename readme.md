@@ -1,9 +1,17 @@
-# Projekt poziomica
-
-![plytka_wyprowadzenia](https://user-images.githubusercontent.com/95858259/217327461-cd24c018-ccdd-40c6-ad00-4be09ccdbb1e.jpg)
+# Projekt poziomica z wykorzystaniem konfiguracji I2C
 
 
-## Konfiguracja ACC
+# Spis treści
+* [Konfiguracja wejść i wyjść](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/Analog%20output.pdf)
+* [Konfiguracja akcelometra (ACC)](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/ACC_I2C.jpg)
+* [Schemat](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/schemat.png) 
+* [Płytka](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/plytka.png)
+
+
+## Konfiguracja wejść i wyjść analogowych
+
+### Konfiguracja akcelometra (ACC)
+
  Aby skorzystać z ACC w konfiguracji I2C należy pobrać bibliotekę:
  
  1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
@@ -39,7 +47,7 @@ static void MX_I2C1_Init(void)
 }
 ```
 
-## Program, który odczytuje dane z ACC i wyświetla je na konsoli:
+### Program, który odczytuje dane z ACC i wyświetla je na konsoli:
 ```ruby
 #include "stm32f7xx_hal.h"  // Dołącz bibliotekę HAL
 #include "stdio.h"  // Dołącz bibliotekę standardowego wejścia/wyjścia
@@ -77,5 +85,9 @@ int main(void)
   }
 }
 ```
-# Deadline
-10.02.2023
+
+## Sposób podłączenia wszelkich peryferiów
+![schemat](https://user-images.githubusercontent.com/95858259/218488497-f833fbca-4484-4152-b859-508687c27f4f.png)
+
+
+
