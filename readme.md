@@ -1,18 +1,21 @@
 # Projekt poziomica z wykorzystaniem konfiguracji I2C
 
 
-# Spis treści
+## Spis treści
 * [Konfiguracja wejść i wyjść](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/Analog%20output.pdf)
 * [Konfiguracja akcelometra (ACC)](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/ACC_I2C.jpg)
 * [Schemat](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/schemat.png) 
 * [Płytka](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/plytka.png)
+ ![plytka_wyprowadzenia](https://user-images.githubusercontent.com/95858259/218491318-5908d1b5-e33f-4ac4-8be1-57eedee09f88.jpg)
 
 
-## Konfiguracja wejść i wyjść analogowych
+## [Raport](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/raport.pdf)
 
-### Konfiguracja akcelometra (ACC)
+### Konfiguracja ACC (akcelometra)
 
- Aby skorzystać z ACC w konfiguracji I2C należy pobrać bibliotekę:
+* [Badany akcelometr](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/LIS3DH_akcelometr_fullDATASHEET.PDF)
+
+ Aby skorzystać z ACC(akcelometru) w konfiguracji I2C należy pobrać bibliotekę:
  
  1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
  2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
@@ -85,9 +88,3 @@ int main(void)
   }
 }
 ```
-
-## Sposób podłączenia wszelkich peryferiów
-![schemat](https://user-images.githubusercontent.com/95858259/218488497-f833fbca-4484-4152-b859-508687c27f4f.png)
-
-
-
