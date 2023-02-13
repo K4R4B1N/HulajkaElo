@@ -21,8 +21,8 @@
  1. Kliknij na "Płytka" > "Zarządzaj bibliotekami" w górnym menu.
  2. W polu wyszukiwania wpisz "I2C" i znajdź bibliotekę "STM32F7xx_HAL_Driver".
  3. Zaznacz tę bibliotekę i kliknij "Dodaj do projektu".
-Albo
-* Pobierz bezpośrednio z biblioteki [github](https://github.com/STMicroelectronics/stm32h7xx_hal_driver/tree/master/Src)
+ 4. Albo: Pobierz bezpośrednio z biblioteki [github](https://github.com/STMicroelectronics/stm32h7xx_hal_driver/tree/master/Src)
+
  Następnie dodać kod:
 ```ruby
 #include "stm32f7xx_hal.h" //biblioteka HAL
