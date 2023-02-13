@@ -3,7 +3,7 @@
 
 ## Spis treści
 * [Konfiguracja wejść i wyjść](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/Analog%20output.pdf)
-* [Konfiguracja akcelometra (ACC)](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/ACC_I2C.jpg)
+* [Konfiguracja I2C](https://github.com/K4R4B1N/HulajkaElo/blob/main/docs/ACC_I2C.jpg)
 * [Schemat](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/schemat.png) 
 * [Płytka](https://github.com/K4R4B1N/HulajkaElo/blob/main/images/plytka.png)
  ![plytka_wyprowadzenia](https://user-images.githubusercontent.com/95858259/218491318-5908d1b5-e33f-4ac4-8be1-57eedee09f88.jpg)
